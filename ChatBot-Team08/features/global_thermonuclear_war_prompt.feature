@@ -15,3 +15,9 @@ Scenario: Verify the prompt shows up
 	When I type "1" and press Enter
 	Then I should see "nope.avi"
 	
+Scenario: Verify the prompt shows up
+	Given the application is running
+	When I type "Sriram" and press Enter
+	When I type "5" and press Enter
+	Then I should see "BOOM!"	
+	
